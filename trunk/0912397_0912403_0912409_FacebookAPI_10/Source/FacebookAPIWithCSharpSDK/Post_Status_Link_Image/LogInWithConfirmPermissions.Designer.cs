@@ -1,4 +1,4 @@
-﻿namespace LogIn
+﻿namespace Post_Status_Link_Image
 {
     partial class LogInWithConfirmPermissions
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInWithConfirmPermissions));
             this.webFacebook = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
