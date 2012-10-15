@@ -1,4 +1,4 @@
-﻿namespace GetFriendsList
+﻿namespace LogIn
 {
     partial class LogInForm
     {
