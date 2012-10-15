@@ -1,0 +1,11 @@
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\bin\Debug\GetFriendsList.exe.config
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\bin\Debug\GetFriendsList.exe
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\bin\Debug\GetFriendsList.pdb
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\bin\Debug\Facebook.dll
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\bin\Debug\Facebook.xml
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.GetFriendsListForm.resources
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.LogInForm.resources
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.Properties.Resources.resources
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.csproj.GenerateResource.Cache
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.exe
+C:\Users\Tai\Desktop\web-api-project\0912397_0912403_0912409_FacebookAPI_10\Source\FacebookAPIWithCSharpSDK\GetFriendsList\obj\Debug\GetFriendsList.pdb
