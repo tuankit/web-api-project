@@ -34,6 +34,8 @@ namespace GetFriendsList
 
         private void getFriends_Click(object sender, EventArgs e)
         {
+            friendList.Items.Clear();
+
             if (access_token != "")
             {
                 FacebookClient fb = new FacebookClient(access_token);
@@ -46,8 +48,7 @@ namespace GetFriendsList
                 {
                     friendList.Items.Add(FriendList.data[i].name);
                 }
-            }
-           
+            }           
         }
     }
 }
