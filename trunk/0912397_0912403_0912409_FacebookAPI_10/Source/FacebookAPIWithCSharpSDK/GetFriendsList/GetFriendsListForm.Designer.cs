@@ -85,6 +85,7 @@
             this.Controls.Add(this.getFriends);
             this.Controls.Add(this.logIn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GetFriendsListForm";
             this.Text = "Friends List";
             this.ResumeLayout(false);
