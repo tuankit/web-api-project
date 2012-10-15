@@ -35,18 +35,23 @@ namespace Post_Status_Link_Image
                 string url1 = webFacebook.Url.AbsoluteUri;
                 string url2 = url1.Substring(url1.IndexOf("access_token") + 13);
                 AppSettings.Default.AccessToken = url2.Substring(0, url2.IndexOf("&"));
-                main.logIn.Enabled = false;
+                main.logIn.Text = "Home";
                 main.post.Enabled = true;
                 main.please.Visible = false;
 
+                main.isLogIn = true;
                 FacebookClient fb = new FacebookClient(AppSettings.Default.AccessToken);
 
-                dynamic myInfor = fb.Get("/me");
-                main.image.ImageLocation = String.Format("http://graph.facebook.com/{0}/picture", myInfor.id);
-                main.name.Text = myInfor.name;
-                main.location.Text = myInfor.location.name;
-                main.homeTown.Text = myInfor.hometown.name;
-                main.link.Text = myInfor.link;
+                dynamic friendList = fb.Get("/me/friends");
+
+                int count = (int)friendList.data.Count;
+
+                for (int i = 0; i < count; i++)
+                {
+                    main.friendList.Items.Add(friendList.data[i].name);
+                }
+                main.setInfor("me");
+                main.user = "me";
                 Close();
             }
         }
