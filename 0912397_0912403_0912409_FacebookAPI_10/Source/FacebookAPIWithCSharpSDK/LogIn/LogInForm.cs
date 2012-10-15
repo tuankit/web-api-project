@@ -31,7 +31,6 @@ namespace LogIn
                 string url1 = webFacebook.Url.AbsoluteUri;
                 string url2 = url1.Substring(url1.IndexOf("access_token") + 13);
                 access_token = url2.Substring(0, url2.IndexOf("&"));
-                MessageBox.Show(access_token);
             }
         }
     }
