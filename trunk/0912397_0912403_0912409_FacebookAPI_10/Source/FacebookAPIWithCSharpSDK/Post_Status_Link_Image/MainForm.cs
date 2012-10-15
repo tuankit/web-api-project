@@ -30,9 +30,33 @@ namespace Post_Status_Link_Image
                 info.Text = myInfor.name + "'s Information";
                 image.ImageLocation = String.Format("http://graph.facebook.com/{0}/picture", myInfor.id);
                 name.Text = myInfor.name;
-                location.Text = myInfor.location.name;
-                homeTown.Text = myInfor.hometown.name;
-                link.Text = myInfor.link;
+
+                try
+                {
+                    location.Text = myInfor.location.name;
+                }
+                catch (System.Exception ex)
+                {
+                    location.Text = null;
+                }
+
+                try
+                {
+                    homeTown.Text = myInfor.hometown.name;
+                }
+                catch (System.Exception ex)
+                {
+                    homeTown.Text = null;
+                }
+
+                try
+                {
+                    link.Text = myInfor.link;
+                }
+                catch (System.Exception ex)
+                {
+                    link.Text = null;
+                }
             }
             else
             {
