@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogIn", "LogIn\LogIn.csproj", "{6710F974-C35C-480D-BF79-D239555A6383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetFriendsList", "GetFriendsList\GetFriendsList.csproj", "{97C4F3A3-1A3D-45D5-ACE9-15E2111B06D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post_Status_Link_Image", "Post_Status_Link_Image\Post_Status_Link_Image.csproj", "{379A5745-88C9-4F0A-AD8E-61277B681EEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6710F974-C35C-480D-BF79-D239555A6383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6710F974-C35C-480D-BF79-D239555A6383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6710F974-C35C-480D-BF79-D239555A6383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6710F974-C35C-480D-BF79-D239555A6383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C4F3A3-1A3D-45D5-ACE9-15E2111B06D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C4F3A3-1A3D-45D5-ACE9-15E2111B06D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C4F3A3-1A3D-45D5-ACE9-15E2111B06D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C4F3A3-1A3D-45D5-ACE9-15E2111B06D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379A5745-88C9-4F0A-AD8E-61277B681EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379A5745-88C9-4F0A-AD8E-61277B681EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379A5745-88C9-4F0A-AD8E-61277B681EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379A5745-88C9-4F0A-AD8E-61277B681EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
