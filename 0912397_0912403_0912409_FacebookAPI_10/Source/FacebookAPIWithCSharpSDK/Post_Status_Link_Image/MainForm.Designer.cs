@@ -51,7 +51,7 @@
             this.post = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.friends = new System.Windows.Forms.GroupBox();
-            this.friendList = new System.Windows.Forms.ListBox();
+            this.friendListbox = new System.Windows.Forms.ListBox();
             this.info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -304,7 +304,7 @@
             // 
             // friends
             // 
-            this.friends.Controls.Add(this.friendList);
+            this.friends.Controls.Add(this.friendListbox);
             this.friends.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friends.Location = new System.Drawing.Point(514, 12);
             this.friends.Name = "friends";
@@ -313,16 +313,16 @@
             this.friends.TabStop = false;
             this.friends.Text = "Friends";
             // 
-            // friendList
+            // friendListbox
             // 
-            this.friendList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friendList.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.friendList.FormattingEnabled = true;
-            this.friendList.Location = new System.Drawing.Point(6, 19);
-            this.friendList.Name = "friendList";
-            this.friendList.Size = new System.Drawing.Size(208, 420);
-            this.friendList.TabIndex = 0;
-            this.friendList.SelectedIndexChanged += new System.EventHandler(this.friendList_SelectedIndexChanged);
+            this.friendListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.friendListbox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.friendListbox.FormattingEnabled = true;
+            this.friendListbox.Location = new System.Drawing.Point(6, 19);
+            this.friendListbox.Name = "friendListbox";
+            this.friendListbox.Size = new System.Drawing.Size(208, 420);
+            this.friendListbox.TabIndex = 0;
+            this.friendListbox.SelectedIndexChanged += new System.EventHandler(this.friendList_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -337,6 +337,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Status";
             this.info.ResumeLayout(false);
             this.info.PerformLayout();
@@ -372,6 +373,6 @@
         public System.Windows.Forms.PictureBox image;
         public System.Windows.Forms.Button exit;
         private System.Windows.Forms.GroupBox friends;
-        public System.Windows.Forms.ListBox friendList;
+        public System.Windows.Forms.ListBox friendListbox;
     }
 }

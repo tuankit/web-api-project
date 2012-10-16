@@ -26,6 +26,16 @@ namespace Post_Status_Link_Image
             FacebookClient fb = new FacebookClient(AppSettings.Default.AccessToken);
             if (username.ToUpper().Equals("ME"))
             {
+                friendListbox.Items.Clear();
+
+                dynamic friendList = fb.Get("/me/friends");
+
+                int count = (int)friendList.data.Count;
+
+                for (int i = 0; i < count; i++)
+                {
+                    friendListbox.Items.Add(friendList.data[i].name);
+                }
                 dynamic myInfor = fb.Get("/me");
                 info.Text = myInfor.name + "'s Information";
                 image.ImageLocation = String.Format("http://graph.facebook.com/{0}/picture", myInfor.id);
@@ -156,7 +166,7 @@ namespace Post_Status_Link_Image
                 }
                 string name = "your";
                 if (!user.ToUpper().Equals("ME"))
-                    name = friendList.SelectedItem.ToString() + "'s";
+                    name = friendListbox.SelectedItem.ToString() + "'s";
                 MessageBox.Show("Post to " + name + " wall successful.", "Posted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -184,7 +194,7 @@ namespace Post_Status_Link_Image
 
         private void friendList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            setInfor(friendList.SelectedItem.ToString());
+            setInfor(friendListbox.SelectedItem.ToString());
             FacebookClient fbClient = new FacebookClient(AppSettings.Default.AccessToken);
             dynamic friendsList = fbClient.Get("/me/friends");
 
@@ -193,7 +203,7 @@ namespace Post_Status_Link_Image
 
             for (int i = 0; i < count; i++)
             {
-                if (friendsList.data[i].name.Equals(friendList.SelectedItem.ToString()))
+                if (friendsList.data[i].name.Equals(friendListbox.SelectedItem.ToString()))
                 {
                     user = friendsList.data[i].id;
                     return;
