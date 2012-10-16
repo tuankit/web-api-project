@@ -40,16 +40,6 @@ namespace Post_Status_Link_Image
                 main.please.Visible = false;
 
                 main.isLogIn = true;
-                FacebookClient fb = new FacebookClient(AppSettings.Default.AccessToken);
-
-                dynamic friendList = fb.Get("/me/friends");
-
-                int count = (int)friendList.data.Count;
-
-                for (int i = 0; i < count; i++)
-                {
-                    main.friendList.Items.Add(friendList.data[i].name);
-                }
                 main.setInfor("me");
                 main.user = "me";
                 Close();
